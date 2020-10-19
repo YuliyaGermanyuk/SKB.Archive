@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CA431818-83D0-4E62-8569-D96BF0F0B2F4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SKB.Archive.Scripts</RootNamespace>
+    <AssemblyName>SKB.Archive.Scripts</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DocsVision.BackOffice.ObjectModel">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\DocsVision\5.0\Client\BaseObjects\DocsVision.BackOffice.ObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="DocsVision.BackOffice.WinForms">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\DocsVision\5.0\Client\BaseObjects\DocsVision.BackOffice.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="DocsVision.Platform.ObjectManager, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7148afe997f90519, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\DocsVision\5.0\Client\DocsVision.Platform.ObjectManager.dll</HintPath>
+    </Reference>
+    <Reference Include="DocsVision.Platform.ObjectModel">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\DocsVision\5.0\Client\DocsVision.Platform.ObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="DocsVision.Platform.WinForms, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7148afe997f90519, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\DocsVision\5.0\Client\DocsVision.Platform.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="SKB.Archive">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\DocsVision\5.0\Client\SKB.Archive.dll</HintPath>
+    </Reference>
+    <Reference Include="SKB.Base">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\DocsVision\5.0\Client\SKB.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MarketingFilesCard.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
